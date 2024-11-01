@@ -64,6 +64,4 @@ Al iniciar la aplicación, se presenta un menú con las opciones de conversión.
 
 ## Conclusiones
 
-Este reto es una excelente oportunidad para poner en práctica los conocimientos adquiridos sobre Java y consumo de APIs. Espero que este proyecto te sea útil y que disfrutes desarrollando tu propio conversor de monedas. ¡Buena suerte!
-
-#ConversorUniversal2
+Este reto es una excelente oportunidad para poner en práctica los conocimientos adquiridos sobre Java y consumo de APIs. Espero que este proyecto te sea útil y que disfrutes desarrollando tu propio conversor de monedas.
