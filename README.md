@@ -1,67 +1,67 @@
-# Reto de Conversor de Monedas - Alura
+# Currency Converter Challenge - Alura
 
-¡Hola a todos! Este repositorio contiene la solución al reto propuesto por Alura, donde se desarrolla un conversor de monedas utilizando Java y consumiendo una API. A continuación, se describe el reto y se explica el código implementado.
+Hello everyone! This repository contains the solution to the challenge proposed by Alura, where a currency converter is developed using Java and consuming an API. Below, the challenge is described, and the implemented code is explained.
 
-## Descripción del Reto
+## Challenge Description
 
-El objetivo de este reto es crear una aplicación de consola que permita convertir diferentes monedas utilizando tasas de cambio obtenidas de una API. La aplicación debe ofrecer un menú con varias opciones de conversión y debe permitir al usuario ingresar valores a convertir.
+The goal of this challenge is to create a console application that allows converting different currencies using exchange rates obtained from an API. The application should offer a menu with several conversion options and allow the user to enter values to convert.
 
-### Importancia
+### Importance
 
-En un mundo globalizado, es esencial poder conocer la cotización de diferentes monedas para realizar transacciones adecuadas. Este proyecto no solo ayuda a entender el manejo de datos en JSON, sino que también proporciona experiencia en el consumo de APIs, un aspecto fundamental en el desarrollo backend.
+In a globalized world, it is essential to know the exchange rates of different currencies to conduct proper transactions. This project not only helps in understanding data handling in JSON but also provides experience in API consumption, a fundamental aspect in backend development.
 
-## Funcionalidades
+## Features
 
-La aplicación cuenta con las siguientes características:
+The application includes the following features:
 
-- Un menú interactivo que permite seleccionar diferentes opciones de conversión.
-- Conversión entre múltiples monedas (Dólar, Euro, Real Brasileño, etc.).
-- Obtención de tasas de cambio desde la API de Exchange Rate.
-- Cálculo y presentación de los resultados en un formato legible.
+- An interactive menu that allows selecting different conversion options.
+- Conversion between multiple currencies (Dollar, Euro, Brazilian Real, etc.).
+- Obtaining exchange rates from the Exchange Rate API.
+- Calculating and presenting results in a readable format.
 
-## Estructura del Código
+## Code Structure
 
-El código se divide en varias clases y métodos para organizar mejor la lógica de la aplicación. A continuación, se detalla la estructura del código:
+The code is divided into several classes and methods to better organize the application logic. Below is a detailed structure of the code:
 
-### Clases Principales
+### Main Classes
 
 1. **Main**:
-    - Esta es la clase principal donde se inicia la ejecución de la aplicación.
-    - Contiene el menú principal y gestiona las entradas del usuario.
+    - This is the main class where the application execution starts.
+    - Contains the main menu and manages user input.
 
-2. **Conversor**:
-    - Esta clase se encarga de realizar las conversiones de monedas.
-    - Tiene métodos que permiten convertir entre diferentes monedas utilizando las tasas de cambio obtenidas de la API.
+2. **Converter**:
+    - This class handles currency conversions.
+    - It has methods to convert between different currencies using exchange rates obtained from the API.
 
 3. **ApiService**:
-    - Esta clase gestiona la comunicación con la API de Exchange Rate.
-    - Se encarga de realizar las peticiones HTTP y manejar las respuestas en formato JSON.
+    - This class manages communication with the Exchange Rate API.
+    - Responsible for making HTTP requests and handling JSON responses.
 
-### Métodos Clave
+### Key Methods
 
-- **mostrarMenu()**: Muestra las opciones disponibles en el menú y solicita la entrada del usuario.
-- **realizarConversion()**: Llama al método correspondiente de la clase `Conversor` para realizar la conversión deseada según la selección del usuario.
-- **obtenerTasasDeCambio()**: Se encuentra en la clase `ApiService` y se encarga de solicitar las tasas de cambio a la API.
+- **showMenu()**: Displays the available menu options and requests user input.
+- **performConversion()**: Calls the corresponding method in the `Converter` class to perform the desired conversion based on the user’s selection.
+- **getExchangeRates()**: Located in the `ApiService` class, this method requests exchange rates from the API.
 
-### Ejemplo de Uso
+### Usage Example
 
-Al iniciar la aplicación, se presenta un menú con las opciones de conversión. El usuario puede seleccionar una opción e ingresar el valor a convertir. Por ejemplo:
+When starting the application, a menu with conversion options is presented. The user can select an option and enter the value to convert. For example:
 
-1. Si el usuario elige convertir 25 dólares a pesos mexicanos, la aplicación mostrará el resultado correspondiente basado en la tasa de cambio actual.
-2. El usuario puede realizar múltiples conversiones sin necesidad de reiniciar la aplicación, gracias al uso de un bucle que permite volver al menú después de cada conversión.
+1. If the user chooses to convert 25 dollars to Mexican pesos, the application will display the corresponding result based on the current exchange rate.
+2. The user can perform multiple conversions without restarting the application, thanks to a loop that allows returning to the menu after each conversion.
 
-## Requisitos
+## Requirements
 
 - JDK 21 TLS.
-- Conexión a Internet para acceder a la API de Exchange Rate.
+- Internet connection to access the Exchange Rate API.
 
-## Instrucciones para Ejecutar el Proyecto
+## Instructions to Run the Project
 
-1. Clona este repositorio en tu máquina local.
-2. Asegúrate de tener configurado el JDK en tu sistema.
-3. Abre el proyecto en tu IDE favorito (recomendado IntelliJ IDEA).
-4. Ejecuta la clase `Main`.
+1. Clone this repository to your local machine.
+2. Ensure that the JDK is configured on your system.
+3. Open the project in your favorite IDE (recommended IntelliJ IDEA).
+4. Run the `Main` class.
 
-## Conclusiones
+## Conclusions
 
-Este reto es una excelente oportunidad para poner en práctica los conocimientos adquiridos sobre Java y consumo de APIs. Espero que este proyecto te sea útil y que disfrutes desarrollando tu propio conversor de monedas.
+This challenge is an excellent opportunity to practice the knowledge gained about Java and API consumption. I hope this project is useful and that you enjoy developing your own currency converter.
